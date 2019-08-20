@@ -15,8 +15,12 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  {% include "partials/global/site-head.njk" %}
+  {% if pageType !== 'Homepage' %}
+    {% include "partials/global/site-head.njk" %}
+  {% endif %}
+  
   {% block content %}
+
   {% endblock content %}
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
