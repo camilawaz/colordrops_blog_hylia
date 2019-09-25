@@ -18,13 +18,15 @@
   {% if pageType !== 'Homepage' %}
     {% include "partials/global/site-head.njk" %}
   {% endif %}
-  
+
   {% block content %}
 
   {% endblock content %}
+  {% if pageType !== 'Homepage' %}
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
   {% endblock %}
+  {% endif %}
   <script type="module" src="/js/components/theme-toggle.js" async defer></script>
   <script>
     if ('serviceWorker' in navigator) {
