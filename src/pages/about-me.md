@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: About
-permalink: about-camila-waz
+permalink: /about-camila-waz/index.html
 metaTitle: About Camila Waz
 ---
 Camila Waz is a Brazilian web designer and developer, now based in Dublin - Ireland.
