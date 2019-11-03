@@ -1,14 +1,13 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/",
-      "external": false
+      "text": "Now",
+      "url": "./now"
     },
     {
-      "text": "Twitter",
-      "url": "https://twitter.com/camila_waz",
-      "external": true
+      "text": "About",
+      "url": "./about-camila-waz/",
+      "external": false
     },
     {
       "text": "Instagram",
