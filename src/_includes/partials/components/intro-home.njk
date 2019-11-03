@@ -1,4 +1,4 @@
-<section class="[ intro ] [ intro-home ] [ pad-top-900 pad-bottom-max ]">
+<section class="[ intro ] [ intro-home ] [ pad-top-max pad-bottom-max ]">
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header role="banner" class="[ site-head ] [ pad-top-700 pad-bottom-700 ">
@@ -7,18 +7,42 @@
     <div class="[ site-head__inner ] [ md:box-flex space-between align-center ] ">
       <a href="/" class="[ site-head__site-name ] [ leading-tight ]"{{ 'aria-current=page' if page.url == '/' | safe }}>
         <span class="visually-hidden">{{ 'Back to homepage' if page.url != '/' else 'Homepage' }}</span>
-        <span class="[ site-head__site-name ] [ text-600 ]" aria-hidden="true">Camila Waz</span>
+        <span class="[ visually-hidden ] [ site-head__site-name ] [ text-600 ]" aria-hidden="true">Camila Waz</span>
+        <img class="header__logo" src="{{ site.logo }}" alt="Camila Waz Logo"/>
       </a>
-      {% include "partials/components/nav.njk" %}
+
+
     </div>
   </div>
 </header>
 
 
-  <div class="[ wrapper ] [ sf-flow ] [ pad-top-900 ]">
+  <div class="[ wrapper ] [ sf-flow ]">
     <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-800 md:text-900 leading-tight ] [ p-name ]">{{ introHeading }}</h1>
     {% if introSummary %}
       <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}</div>
     {% endif %}
+
+    <nav class="nav [ pad-top-900 ]">
+      <ul class="[ nav__list ] [ box-flex align-start]">
+        {% for item in navigation.items %}
+          {% set relAttribute = '' %}
+          {% set currentAttribute = '' %}
+
+          {% if item.rel %}
+            {% set relAttribute = ' rel="' + item.rel + '"' %}
+          {% endif %}
+
+          {% if page.url == item.url %}
+            {% set currentAttribute = ' aria-current="page"' %}
+          {% endif %}
+
+          <li class="nav__item">
+            <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
   </div>
 </section>
