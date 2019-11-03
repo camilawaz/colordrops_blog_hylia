@@ -1,9 +1,8 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/",
-      "external": false
+      "text": "Now",
+      "url": "./now"
     },
     {
       "text": "Twitter",
