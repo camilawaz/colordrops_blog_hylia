@@ -1,13 +1,13 @@
 {
   "items": [
     {
-      "text": "Now",
-      "url": "./now"
-    },
-    {
       "text": "About",
       "url": "./about-camila-waz/",
       "external": false
+    },
+    {
+      "text": "Now",
+      "url": "./now"
     },
     {
       "text": "Instagram",
