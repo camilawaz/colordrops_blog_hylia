@@ -27,12 +27,13 @@
 
 // homepage
 .intro-home {
+
   min-height: 100vh;
-  // background-image: linear-gradient(0deg, #E88B3C 0%, #FFDB6E 10%, #FFE79B 17%, #E1D8C5 35%, #C5B1B7 65%, #AB7B9F 100%);
-  &:before {
-    content: "";
-    background: white;
-    display: block;
-    width: 100%;
-  }
+  background: white;
+
+
+}
+
+.header__logo {
+  max-width: 100px;
 }
