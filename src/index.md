@@ -1,8 +1,8 @@
 ---
 layout: home
-title: ColorDrops
+title: Camila Waz
 postsHeading: Latest posts
 archiveButtonText: See all posts
 socialImage: ''
 ---
-Lorem Ipsum Dolor Sit Amet
+I like to create things <s>for the web</s> for fun
