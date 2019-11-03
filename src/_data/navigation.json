@@ -5,6 +5,11 @@
       "url": "./now"
     },
     {
+      "text": "About",
+      "url": "./about-camila-waz/",
+      "external": false
+    },
+    {
       "text": "Instagram",
       "url": "https://www.instagram.com/colordrops_",
       "external": true
@@ -13,10 +18,6 @@
       "text": "CodePen",
       "url": "https://codepen.io/camila_waz",
       "external": true
-    },
-    {
-      "text": "About",
-      "url": "./about-camila-waz/"
     }
   ]
 }
