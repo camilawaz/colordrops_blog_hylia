@@ -2,7 +2,7 @@
   "items": [
     {
       "text": "About",
-      "url": "./about-camila-waz/",
+      "url": "../about-camila-waz/",
       "external": false
     },
     {
