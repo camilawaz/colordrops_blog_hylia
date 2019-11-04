@@ -2,12 +2,12 @@
   "items": [
     {
       "text": "About",
-      "url": "./about-camila-waz/",
+      "url": "../about-camila-waz/",
       "external": false
     },
     {
       "text": "Now",
-      "url": "./now"
+      "url": "../now"
     },
     {
       "text": "Instagram",
