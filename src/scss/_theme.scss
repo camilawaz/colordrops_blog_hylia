@@ -19,6 +19,11 @@
   --color-theme-primary-glare: #{get-color('primary-glare')};
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('highlight')};
+
+  --color-brand-1: var(--color-theme-primary);
+  --color-brand-2: #f7b23f;
+  --color-brand-3: #ec4e8c;
+  --color-brand-4: #4eb09b;
 }
 
 @include dark-mode() {

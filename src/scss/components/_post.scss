@@ -3,7 +3,7 @@
     --flow-space: #{get-size(800)};
 
     /**
-     * Generic HTML styles 
+     * Generic HTML styles
      */
     h2 + *,
     h3 + * {
@@ -22,16 +22,20 @@
       color: var(--color-dark);
       position: relative;
       display: inline-block;
-      background: var(--color-theme-highlight);
-      padding: 0.2rem 0.4rem 0.3rem 0.4rem;
+      padding: 0.2rem 0.1rem 0.3rem 0.1rem;
       text-decoration: none;
       word-break: break-word;
-
+      background-repeat: repeat-x;
+      background-position: 0 100%;
+      background-size: 100% 5px;
+      background-image: linear-gradient(to right, var(--color-brand-1) 0%, var(--color-brand-2) 25%, var(--color-brand-3) 50%, var(--color-brand-4) 75%, var(--color-brand-1) 100%);
+      transition: background-size .5s ease;
       @include apply-utility('leading', 'tight');
     }
 
     a:not([class]):hover {
-      text-decoration: underline;
+      background-size: 2000% 5px;
+      // background-image: linear-gradient(to right, var(--color-brand-1) 0%, var(--color-brand-1) 25%, var(--color-brand-1) 50%, var(--color-brand-1) 75%, var(--color-brand-1) 100%);
     }
 
     code {
