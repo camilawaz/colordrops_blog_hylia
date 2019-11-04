@@ -1,14 +1,14 @@
 {
   "showThemeCredit": true,
   "logo": "/images/avatar.png",
-  "name": "Color Drops",
-  "shortDesc": "ColorDrops",
-  "url": "https://colordrops.netlify.com",
+  "name": "Camila Waz",
+  "shortDesc": "Camila Waz",
+  "url": "https://www.camilawaz.com",
   "authorEmail": "hello@camilawaz.com",
   "authorHandle": "@camila_waz",
   "authorName": "Camila Waz",
   "enableThirdPartyComments": false,
   "paymentPointer": "./",
-  "faviconPath": "/images/favicon.png",
+  "faviconPath": "/images/avatar.png",
   "maxPostsPerPage": 5
 }
