@@ -21,12 +21,16 @@
   {% block content %}
 
   {% endblock content %}
+
   {% if pageType !== 'Homepage' %}
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
   {% endblock %}
   {% endif %}
-  <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+
+  <!-- RETURN THIS FOR DARK MODE -->
+  <!-- <script type="module" src="/js/components/theme-toggle.js" async defer></script> -->
+  
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
