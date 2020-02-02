@@ -2,7 +2,7 @@
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header role="banner" class="[ site-head ] [ pad-top-max pad-bottom-700 ">
-  <div class="wrapper">
+  <div class="inner-wrapper">
     <span class="visually-hidden">{{ site.name }}: {{ pageType }}</span>
     <div class="[ site-head__inner ] [ md:box-flex space-between align-center ] ">
       <a href="/" class="[ site-head__site-name ] [ leading-tight ]"{{ 'aria-current=page' if page.url == '/' | safe }}>
@@ -15,7 +15,7 @@
 </header>
 
 
-  <div class="[ wrapper ] [ sf-flow ]">
+  <div class="[ inner-wrapper ] [ sf-flow ]">
     <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-800 md:text-900 leading-tight ] [ p-name ]">{{ introHeading }}</h1>
     {% if introSummary %}
       <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}</div>
