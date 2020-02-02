@@ -4,12 +4,16 @@ title: About
 permalink: /about-camila-waz/index.html
 metaTitle: About Camila Waz
 ---
-Camila Waz is a Brazilian web designer and developer, now based in Dublin - Ireland.
+Heya, I'm Camila Waz. A designer and developer based in Dublin, Ireland.
 
-Her passion for creating content brought her into the world of tech where she got to know Front End Technologies and Design by building blog themes.
+I aim to work at the intersection between design and front-end development using UX design principles in alignment with HTML, CSS, JavaScript and libraries to create great and scalable solutions.
 
-Using this knowledge she worked as a Freelancer for a number of years helping entrepreneurs and bloggers to get their message (and their websites!) out there. At the same time, she contributed to her local tech community organising events, meetups and training sessions for new developers.
+It all started more than 10 years ago when my passion for creating content brought me into the world of tech where I got to know Front End Technologies and Design by building blog themes. I've worked as a Freelancer for a number of years helping entrepreneurs and bloggers to get their message (and their websites!) out there.
 
-Now she works as a UI/UX Web Developer and is a co-organiser for DublinCSS - a community with monthly meetups that welcomes all developers, designers and curious individuals, regardless of experience level, to discuss and learn about the latest and standard CSS tips and techniques.
+I graduated in Communication in Digital Media, back in Brazil, where I had the opportunity to develop myself as a multidisciplinary professional. I'm a NN/g certified UX professional ([Verify](https://www.nngroup.com/ux-certification/verify/) - Code: 1032376) and have also pursued a number of other qualifications focused in User Experience as well as Adobe Creative Suite training.
+
+Currently I work as UI/UX Web Developer and co-organise [DublinCSS](http://dublincss.org/) - a community with monthly meetups that welcomes all developers, designers and curious individuals, regardless of experience level, to discuss and learn about the latest and standard CSS tips and techniques.
+
+Last but not least, I am someone who loves to share what I know and learn more every day. I'm always up-to-date with the web trends and happy to share content inspiration and engage in public speaking and event organising.
 
 [Download my Resume](https://www.camilawaz.com/images/camila-waz-cv.pdf)
