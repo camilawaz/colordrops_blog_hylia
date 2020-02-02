@@ -36,11 +36,12 @@
       content: "";
       height: 100%;
       width: 100%;
-      background-position: right bottom .3em;
+      background-position: right bottom .45em;
       background-size: 100% 2px;
       background-image: var(--brand-gradient);
       background-repeat: repeat-x;
       position: absolute;
+      top: 0;
       right: 0;
     }
 
