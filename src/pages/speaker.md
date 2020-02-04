@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
-title: Speaker
-permalink: /speaker/index.html
+title: Speaking
+permalink: /speaking/index.html
 ---
 
 
