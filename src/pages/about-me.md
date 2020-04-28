@@ -4,7 +4,7 @@ title: About
 permalink: /about-camila-waz/index.html
 metaTitle: About Camila Waz
 ---
-Hey, I'm Camila Waz. A designer and developer based in Dublin, Ireland.\
+Hey, I'm Camila Waz. A designer and developer based in Dublin, Ireland.
 
 I aim to work at the intersection between design and front-end development using UX design principles in alignment with HTML, CSS, JavaScript (and libraries) to bring creative and scalable solutions into the world wide web.
 
