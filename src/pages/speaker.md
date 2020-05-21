@@ -13,11 +13,11 @@ Due to the current circumstances around travel, I'd be happy to discuss any oppo
 
 ### 2020
 
-Playful CSS - [WordCamp  Málaga](https://colordrops.live/WCMalaga-slides) • [Slides](https://colordrops.live/WCMalaga-slides)
+Playful CSS - [WordCamp  Málaga](https://colordrops.link/WCMalaga-slides) • [Slides](https://colordrops.link/WCMalaga-slides)
 
 ### 2019
 
-Modernising your site with CSS (Lightning Talk) - [WordCamp Dublin](https://2019.dublin.wordcamp.org/session/expressing-creativity-through-css/) • [Slides](https://colordrops.live/wordcamp-slides)\
+Modernising your site with CSS (Lightning Talk) - [WordCamp Dublin](https://2019.dublin.wordcamp.org/session/expressing-creativity-through-css/) • [Slides](https://colordrops.link/wordcamp-slides)\
 CSS & Illustrations - [DublinCSS](http://dublincss.org/dublincss-relaunch) • [Slides](https://colordrops.link/cssillustrations)
 
 > Work hard. Don't be an asshole. Share what you know. \
