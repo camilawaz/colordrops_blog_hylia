@@ -1,0 +1,16 @@
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeading = title %}
+{% set introSummary %}{{ content | safe }}{% endset %}
+
+{# Portfolio list content #}
+{% set portfolioListHeading = 'All Projects' %}
+{% set postListItems = collections.portfolio %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    {% include "partials/components/intro.njk" %}
+    {% include "partials/components/portfolio-list.njk" %}
+  </main>
+{% endblock %}
