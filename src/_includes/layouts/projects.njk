@@ -6,10 +6,10 @@
 
 {# Portfolio list content #}
 {% set portfolioListHeading = 'All Projects' %}
-{% set postListItems = collections.portfolio %}
+{% set portfolioListItems = collections.portfolio %}
 
 {% block content %}
-  <main id="main-content" tabindex="-1">
+  <main id="main-content portfolio-list-wrapper" tabindex="-1">
     {% include "partials/components/intro.njk" %}
     {% include "partials/components/portfolio-list.njk" %}
   </main>

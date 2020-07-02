@@ -1,8 +1,8 @@
 {% if portfolioListItems.length %}
-  <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
+  <section class="[ post-list portfolio-list] [ pad-top-700 gap-bottom-900 ]">
     <div class="[ inner-wrapper ] [ sf-flow ]">
       <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">{{ portfolioListHeading }}</h2>
-      <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]" reversed>
+      <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]">
         {% for item in portfolioListItems %}
           {% if item.date.getTime() <= global.now %}
             <li class="post-list__item">
