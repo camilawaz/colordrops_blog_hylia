@@ -8,6 +8,7 @@
         <span class="[[ visually-hidden ]  site-head__site-name ] [ text-600 ]" aria-hidden="true">{{ site.name }}</span>
         <img class="header__logo" src="{{ site.logo }}" alt="Camila Waz Logo"/>
       </a>
+      {% set ariaLabel = 'navigation' %}
       {% include "partials/components/nav.njk" %}
     </div>
   </div>

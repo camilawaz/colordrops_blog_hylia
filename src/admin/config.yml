@@ -4,7 +4,7 @@ backend:
 publish_mode: editorial_workflow
 site_url: "https://www.camilawaz.com"
 media_folder: "src/images"
-public_folder: "images"
+public_folder: "/images"
 collections:
   - name: "pages"
     label: "Pages"
@@ -14,7 +14,6 @@ collections:
         delete: false
         file: "src/index.md"
         slug: "{{slug}}"
-        create: false
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/njk.njk"}
           - {label: "Title", name: "title", widget: "string"}
