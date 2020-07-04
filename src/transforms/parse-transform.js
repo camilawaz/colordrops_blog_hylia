@@ -22,10 +22,10 @@ module.exports = function(value, outputPath) {
         image.setAttribute('loading', 'lazy');
 
         const file = image.getAttribute('src');
-        
+
         if (file.indexOf('http') < 0) {
           const dimensions = getSize('src' + file);
-          
+
           image.setAttribute('width', dimensions.width);
           image.setAttribute('height', dimensions.height);;
         }
@@ -49,6 +49,8 @@ module.exports = function(value, outputPath) {
     }
 
     if (articleHeadings.length) {
+
+
       // Loop each heading and add a little anchor and an ID to each one
       articleHeadings.forEach(heading => {
         const headingSlug = slugify(heading.textContent.toLowerCase());
@@ -63,6 +65,7 @@ module.exports = function(value, outputPath) {
         </svg>`);
 
         heading.setAttribute('id', `heading-${headingSlug}`);
+        heading.classList.add('has-link');
         heading.appendChild(anchor);
       });
     }

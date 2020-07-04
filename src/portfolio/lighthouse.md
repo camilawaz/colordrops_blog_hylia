@@ -2,6 +2,7 @@
 layout: layouts/portfolio.njk
 title: Lighthouse
 metaTitle: Pure CSS Lighthouse by Camila Waz
+socialImage: /images/demo-image-1.jpg
 date: 2020-07-02T21:38:31.143Z
 tags:
   - Pure CSS

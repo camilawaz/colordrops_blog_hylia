@@ -58,7 +58,7 @@ collections:
     folder: "src/portfolio"
     slug: "{{slug}}"
     preview_path: "projects/{{slug}}"
-    create: true
+    create: trues
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/portfolio.njk"}
       - {label: "Title", name: "title", widget: "string"}

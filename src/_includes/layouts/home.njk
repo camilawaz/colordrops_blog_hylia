@@ -3,6 +3,7 @@
 
 {# Intro content #}
 {% set introHeading = title %}
+
 {% set introSummary %}
   {{ content | safe }}
 {% endset %}
@@ -10,6 +11,10 @@
 {# Post list content #}
 {% set postListHeading = postsHeading %}
 {% set postListItems = collections.postFeed %}
+
+{# Portfolio list content #}
+{% set portfolioListHeading = ' ' %}
+{% set portfolioListItems = collections.portfolio %}
 
 {# Archive link #}
 {% if postListItems.length < collections.posts.length %}

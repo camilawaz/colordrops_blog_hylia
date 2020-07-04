@@ -10,14 +10,14 @@ $stalfos-size-scale: map-get($tokens, 'size-scale');
 
 /**
  * COLORS
- * Colors are shared between backgrounds and text by default. 
+ * Colors are shared between backgrounds and text by default.
  * You can also use them to power borders, fills or shadows, for example.
  */
 $stalfos-colors: map-get($tokens, 'colors');
 
 /**
  * UTIL PREFIX
- * All pre-built, framework utilities will have this prefix. 
+ * All pre-built, framework utilities will have this prefix.
  * Example: the wrapper utility is '.sf-wrapper' because the default
  * prefix is 'sf-'.
  */
@@ -30,7 +30,8 @@ $stalfos-util-prefix: 'sf-';
 $metrics: (
   'wrap-max-width': 58rem,
   'wrap-inner-max-width': 52rem,
-  'md-breakpoint': 48rem
+  'md-breakpoint': 48rem,
+  'sm-breakpoint': 38rem
 );
 
 /**
@@ -67,6 +68,16 @@ $stalfos-config: (
     ),
     'output': 'responsive',
     'property': 'display'
+  ),
+  'direction': (
+    'items': (
+      'row': 'row',
+      'row-reverse': 'row-reverse',
+      'column': 'column',
+      'column-reverse': 'column-reverse',
+    ),
+    'output': 'responsive',
+    'property': 'flex-direction'
   ),
   'font': (
     'items': map-get($tokens, 'fonts'),
@@ -113,8 +124,13 @@ $stalfos-config: (
   ),
   'pad-left': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-left'
+  ),
+  'pad-right': (
+    'items': $stalfos-size-scale,
+    'output': 'responsive',
+    'property': 'padding-right'
   ),
   'space': (
     'items': (
@@ -171,7 +187,8 @@ $stalfos-config: (
     'property': 'width'
   ),
   'breakpoints': (
-    'md': #{'(min-width: ' + map-get($metrics, 'md-breakpoint') + ')'}
+    'md': #{'(min-width: ' + map-get($metrics, 'md-breakpoint') + ')'},
+    'sm': #{'(max-width: ' + map-get($metrics, 'sm-breakpoint') + ')'}
   ),
   'utilities': (
     'reset': 'on',

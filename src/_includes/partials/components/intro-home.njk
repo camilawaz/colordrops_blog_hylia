@@ -1,46 +1,69 @@
 <section class="[ intro ] [ intro-home ] [ pad-top-max pad-bottom-max ]">
 
 <a class="skip-link" href="#main-content">Skip to content</a>
-<header role="banner" class="[ site-head ] [ pad-top-max pad-bottom-700 ">
-  <div class="inner-wrapper">
-    <span class="visually-hidden">{{ site.name }}: {{ pageType }}</span>
-    <div class="[ site-head__inner ] [ md:box-flex space-between align-center ] ">
-      <a href="/" class="[ site-head__site-name ] [ leading-tight ]"{{ 'aria-current=page' if page.url == '/' | safe }}>
-        <span class="visually-hidden">{{ 'Back to homepage' if page.url != '/' else 'Homepage' }}</span>
-        <span class="[ visually-hidden ] [ site-head__site-name ] [ text-600 ]" aria-hidden="true">Camila Waz</span>
-        <img class="header__logo" src="{{ site.logo }}" alt="Camila Waz Logo"/>
-      </a>
+
+
+  <div class="[ wrapper ] [ box-flex direction-column md:direction-row ]">
+
+    <div class="[ width-full md:width-half md:pad-right-300 ] [ sf-flow ]">
+      <div class="[ intro__summary ] [ leading-mid ]">
+        <p>Hello there, I'm</p>
+      </div>
+
+      <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-900 md:text-max leading-tight ] [ p-name ]">{{ introHeading }}</h1>
+
+      {% if introSummary %}
+        <div class="[ intro__summary ] [ leading-mid ]">{{ introSummary | safe }}</div>
+      {% endif %}
+
+      <!-- Social Menu Goes Here -->
+      <nav class="nav [ pad-top-900 ]">
+        <ul class="[ nav__list ] [ box-flex align-start]">
+          {% for item in navigation.items %}
+            {% set relAttribute = '' %}
+            {% set currentAttribute = '' %}
+
+            {% if item.rel %}
+              {% set relAttribute = ' rel="' + item.rel + '"' %}
+            {% endif %}
+
+            {% if page.url == item.url %}
+              {% set currentAttribute = ' aria-current="page"' %}
+            {% endif %}
+
+            <li class="nav__item">
+              <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      </div>
+
+
+      <div class="[ width-full md:width-half md:pad-left-300 ]">
+        {% if portfolioListItems.length %}
+          <section class="[ post-list portfolio-list ]">
+              <ol class="[ post-list__items ] [ sf-flow ]">
+                {% for item in portfolioListItems %}
+                  {% if item.date.getTime() <= global.now %}
+                    <li class="post-list__item card-basic">
+                     {% if item.data.socialImage.length %}
+                      <a href="{{ item.url }}">
+                        <img src="{{item.data.socialImage}}" alt="item.data.title"/>
+                        <h2 class="font-serif leading-tight text-300 weight-mid reveal post-list__link">
+                          {{ item.data.title }}
+                        </h2>
+                      </a>
+
+                     {% endif %}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ol>
+          </section>
+        {% endif %}
+      </div>
+
     </div>
-  </div>
-</header>
-
-
-  <div class="[ inner-wrapper ] [ sf-flow ]">
-    <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-800 md:text-900 leading-tight ] [ p-name ]">{{ introHeading }}</h1>
-    {% if introSummary %}
-      <div class="[ intro__summary ] [ sf-flow ] [ leading-mid measure-short ]">{{ introSummary | safe }}</div>
-    {% endif %}
-
-    <nav class="nav [ pad-top-900 ]">
-      <ul class="[ nav__list ] [ box-flex align-start]">
-        {% for item in navigation.items %}
-          {% set relAttribute = '' %}
-          {% set currentAttribute = '' %}
-
-          {% if item.rel %}
-            {% set relAttribute = ' rel="' + item.rel + '"' %}
-          {% endif %}
-
-          {% if page.url == item.url %}
-            {% set currentAttribute = ' aria-current="page"' %}
-          {% endif %}
-
-          <li class="nav__item">
-            <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
-
-  </div>
 </section>

@@ -1,5 +1,5 @@
 ---
-title: 'Portfolio'
+title: 'Work'
 layout: 'layouts/projects.njk'
-permalink: '/portfolio/'
+permalink: '/work/'
 ---

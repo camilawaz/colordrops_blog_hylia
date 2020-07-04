@@ -24,9 +24,15 @@
 }
 
 
+
+
+//Editions by Camila Waz
+
+
 // homepage
+
 .intro-home {
-  min-height: 100vh;
+  // min-height: 100vh;
   background: var(--color-bg);
   .intro__summary p s {
     position: relative;
@@ -44,12 +50,80 @@
       top: 0;
       right: 0;
     }
-
   }
-
-
 }
 
 .header__logo {
   max-width: 100px;
+}
+
+
+@mixin center-absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card-basic {
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07),
+                0 2px 4px rgba(0,0,0,0.07),
+                0 4px 8px rgba(0,0,0,0.07),
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07),
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.reveal {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+
+//Portfolio List on the home page
+.portfolio-list {
+  .intro-home & {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+
+    .post-list__item {
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: " ";
+        display: block;
+        width: 100%;
+        padding-top: 1 / 1 * 100%;
+      }
+      > a,
+      > a img {
+        // crop and center image
+        position: absolute;
+        @include center-absolute;
+        height: 100%;
+      }
+      > a {
+        width: 100%;
+
+        &:hover {
+          .reveal {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+      > a img {
+        width: auto;
+        max-width: inherit;
+      }
+      h2 {
+        padding: 1em;
+        transition: all 250ms;
+      }
+    }
+  }
 }

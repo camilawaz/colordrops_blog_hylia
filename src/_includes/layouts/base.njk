@@ -21,9 +21,7 @@
   {% endblock %}
 </head>
 <body>
-  {% if pageType !== 'Homepage' %}
-    {% include "partials/global/site-head.njk" %}
-  {% endif %}
+  {% include "partials/global/site-head.njk" %}
 
   {% block content %}
 

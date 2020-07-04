@@ -24,7 +24,7 @@
       text-decoration: none;
       word-break: break-word;
       background-repeat: repeat-x;
-      background-position: 0 100%;
+      background-position: 0 calc(100% - 2px);
       background-size: 100% 2px;
       background-image: var(--brand-gradient);
       transition: background-size .5s ease;
