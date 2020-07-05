@@ -10,5 +10,5 @@
   "enableThirdPartyComments": false,
   "paymentPointer": "./",
   "faviconPath": "/images/avatar.png",
-  "maxPostsPerPage": 5
+  "maxPostsPerPage": 4
 }

@@ -2,7 +2,7 @@
 layout: layouts/portfolio.njk
 title: Felipe Alcântara
 metaTitle: UI Design for Felipe Alcântara Website by Camila Waz
-socialImage: images/ui-design-felipe-alcantara-camila-waz.png
+socialImage: /images/ui-design-felipe-alcantara-camila-waz.png
 date: 2020-07-04T21:10:34.597Z
 tags:
   - UI Design

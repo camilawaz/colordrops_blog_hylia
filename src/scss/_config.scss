@@ -28,8 +28,8 @@ $stalfos-util-prefix: 'sf-';
  * Various misc metrics to use around the site
  */
 $metrics: (
-  'wrap-max-width': 58rem,
-  'wrap-inner-max-width': 52rem,
+  'wrap-max-width': 62rem,
+  'wrap-inner-max-width': 60rem,
   'md-breakpoint': 48rem,
   'sm-breakpoint': 38rem
 );
@@ -114,7 +114,7 @@ $stalfos-config: (
   ),
   'pad-top': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-top'
   ),
   'pad-bottom': (

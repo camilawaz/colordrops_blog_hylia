@@ -1,19 +1,18 @@
 {% if portfolioListItems.length %}
-  <section class="[ post-list portfolio-list] [ pad-top-700 gap-bottom-900 ]">
-    <div class="[ inner-wrapper ] [ sf-flow ]">
-      <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]">
+  <section class="[ post-list portfolio-list ] [ pad-top-700 gap-bottom-900 ]">
+    <div class="wrapper">
+      <ol class="[ post-list__items ]" reversed>
         {% for item in portfolioListItems %}
           {% if item.date.getTime() <= global.now %}
-            <li class="post-list__item">
+            <li class="post-list__item card-basic">
              {% if item.data.socialImage.length %}
-              <img src="{{item.data.socialImage}}" alt="item.data.title"/>
-             {% endif %}
-              <h2 class="font-base leading-tight text-600 weight-mid">
-                <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+              <a href="{{ item.url }}" rel="bookmark">
+                <img src="{{ item.data.socialImage }}" alt="{{ item.data.title }}"/>
+              </a>
+              <h2 class="font-serif leading-tight text-900 weight-mid reveal">
+                {{ item.data.title }}
               </h2>
-              <p class="text-500 gap-top-300 weight-mid">
-                <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-              </p>
+             {% endif %}
             </li>
           {% endif %}
         {% endfor %}

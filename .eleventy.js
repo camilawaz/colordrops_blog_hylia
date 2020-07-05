@@ -40,16 +40,11 @@ module.exports = function(config) {
 
   // Custom collections
   const livePosts = post => post.date <= now && !post.data.draft;
+
   config.addCollection('posts', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
     ].reverse();
-  });
-
-  config.addCollection('portfolio', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/portfolio/*.md').filter(livePosts)
-    ]
   });
 
   config.addCollection('postFeed', collection => {
@@ -57,6 +52,20 @@ module.exports = function(config) {
       .reverse()
       .slice(0, site.maxPostsPerPage);
   });
+
+  config.addCollection('portfolio', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/portfolio/*.md').filter(livePosts)
+    ].reverse();
+  });
+
+  config.addCollection('portfolioFeed', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/portfolio/*.md').filter(livePosts)
+    ].reverse().slice(0, site.maxPostsPerPage);
+  });
+
+
 
   // Plugins
   config.addPlugin(rssPlugin);

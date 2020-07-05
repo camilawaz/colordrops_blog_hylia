@@ -5,15 +5,57 @@
 {% set introHeading = title %}
 {% set introSummary %}
 
+{# Portfolio list content #}
+{% set portfolioListHeading = ' ' %}
+{% set portfolioListItems = collections.portfolio %}
+
 {% endset %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
+
     <article class="[ post ] [ h-entry ]">
+
+      <!-- Title -->
       {% include "partials/components/intro.njk" %}
-      <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 ] [ sf-flow ] [ e-content ]">
+
+      <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-700 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 ] [ sf-flow ] [ e-content ]">
+
+        <!-- Featured Info -->
+        <section class="portfolio__featured-info box-flex">
+        
+          {% if projectYear.length %}
+            <div class="year width-third">
+              <p class="font-serif leading-tight text-400 weight-mid">Year</p>
+              <p>{{projectYear}}</p>
+            </div>
+          {% endif %}
+
+          {% if studio.length %}
+            <div class="studio width-third">
+              <p class="font-serif leading-tight text-400 weight-mid">Studio/Client</p>
+              <p>{{studio}}</p>
+            </div>
+          {% endif %}
+
+          {% if myRole.length %}
+          <div class="myRole width-third">
+            <p class="font-serif leading-tight text-400 weight-mid">My Role</p>
+            <p>{{myRole}}</p>
+          </div>
+          {% endif %}
+        </section>
+
+        <!-- Featured Image -->
+        {% if socialImage.length %}
+         <img class="portfolio__featured-image" src="{{socialImage}}" alt="{{title}}" title="{{title}}"/>
+        {% endif %}
+
+        <!-- Content -->
         {{ content | safe }}
+
       </div>
+
       {% if site.enableThirdPartyComments %}
         <hr />
         <aside class="[ post__body ] [ inner-wrapper ] [ pad-bottom-900 text-500 ]">

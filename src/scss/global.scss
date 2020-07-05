@@ -6,10 +6,14 @@
 // Local mixins
 @import 'mixins/dark-mode';
 
+
 @import 'theme';
 
 // Local dependencies
 @import 'typography';
+
+//General mixinss
+@import 'mixins/global-mixins';
 
 /**
  * GLOBAL STYLES
@@ -23,6 +27,18 @@ body {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+  &:before {
+    content: "";
+    height: 8px;
+    width: 100%;
+    // background-position: right bottom .45em;
+    background-size: 100% 100%;
+    background-image: var(--brand-gradient);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 main {
@@ -69,6 +85,8 @@ img {
 @import 'components/pagination';
 @import 'components/post';
 @import 'components/post-list';
+@import 'components/post-list';
+@import 'components/portfolio';
 @import 'components/site-head';
 @import 'components/site-foot';
 @import 'components/skip-link';

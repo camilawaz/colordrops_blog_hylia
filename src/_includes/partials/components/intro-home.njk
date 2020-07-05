@@ -1,61 +1,50 @@
-<section class="[ intro ] [ intro-home ] [ pad-top-max pad-bottom-max ]">
+<section class="[ intro ] [ intro-home ] [ pad-top-700 pad-bottom-max ]">
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 
-
   <div class="[ wrapper ] [ box-flex direction-column md:direction-row ]">
 
-    <div class="[ width-full md:width-half md:pad-right-300 ] [ sf-flow ]">
+    <div class="[ width-full pad-bottom-900 md:width-half md:pad-right-300 md:pad-top-max ]">
       <div class="[ intro__summary ] [ leading-mid ]">
         <p>Hello there, I'm</p>
       </div>
 
-      <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-900 md:text-max leading-tight ] [ p-name ]">{{ introHeading }}</h1>
-
+      <h1 class="[ intro__heading{{ ' intro__heading--compact' if page.url === '/' }} ] [ text-900 md:text-max leading-tight pad-top-300 pad-bottom-300 ] [ p-name ]">{{ introHeading }}</h1>
       {% if introSummary %}
         <div class="[ intro__summary ] [ leading-mid ]">{{ introSummary | safe }}</div>
       {% endif %}
 
       <!-- Social Menu Goes Here -->
-      <nav class="nav [ pad-top-900 ]">
+      <nav class="nav nav--social[ pad-top-900 ]">
         <ul class="[ nav__list ] [ box-flex align-start]">
-          {% for item in navigation.items %}
-            {% set relAttribute = '' %}
-            {% set currentAttribute = '' %}
-
-            {% if item.rel %}
-              {% set relAttribute = ' rel="' + item.rel + '"' %}
-            {% endif %}
-
-            {% if page.url == item.url %}
-              {% set currentAttribute = ' aria-current="page"' %}
-            {% endif %}
 
             <li class="nav__item">
-              <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+              <a href="https://codepen.io/camila_waz">CodePen</a>
             </li>
-          {% endfor %}
+            <li class="nav__item">
+              <a href="https://www.instagram.com/colordrops_">Instagram</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://www.twitter.com/waz_linkbrary">Twitter</a>
+            </li>
         </ul>
       </nav>
-
       </div>
-
 
       <div class="[ width-full md:width-half md:pad-left-300 ]">
         {% if portfolioListItems.length %}
           <section class="[ post-list portfolio-list ]">
-              <ol class="[ post-list__items ] [ sf-flow ]">
+              <ol class="[ post-list__items ]" reversed>
                 {% for item in portfolioListItems %}
                   {% if item.date.getTime() <= global.now %}
                     <li class="post-list__item card-basic">
                      {% if item.data.socialImage.length %}
                       <a href="{{ item.url }}">
-                        <img src="{{item.data.socialImage}}" alt="item.data.title"/>
-                        <h2 class="font-serif leading-tight text-300 weight-mid reveal post-list__link">
-                          {{ item.data.title }}
-                        </h2>
+                        <img src="{{ item.data.socialImage }}" alt="{{ item.data.title }}"/>
                       </a>
-
+                      <h2 class="font-serif leading-tight text-700 weight-mid reveal">
+                        {{ item.data.title }}
+                      </h2>
                      {% endif %}
                     </li>
                   {% endif %}

@@ -14,12 +14,18 @@
 
 {# Portfolio list content #}
 {% set portfolioListHeading = ' ' %}
-{% set portfolioListItems = collections.portfolio %}
+{% set portfolioListItems = collections.portfolioFeed %}
 
 {# Archive link #}
 {% if postListItems.length < collections.posts.length %}
   {% set paginationNextText = archiveButtonText %}
   {% set paginationNextUrl = '/archive' %}
+{% endif %}
+
+{# Portfolio link #}
+{% if portfolioListItems.length < collections.portfolio.length %}
+  {% set paginationNextText = archiveButtonText %}
+  {% set paginationNextUrl = '/work' %}
 {% endif %}
 
 {% block content %}
