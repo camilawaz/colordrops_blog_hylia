@@ -20,4 +20,4 @@ Last but not least, I am someone who loves to share what I know and learn more e
 
 If you’d like to hear more from me, find me on [Twitter](https://twitter.com/camila_waz).
 
-[Download my Resume](https://www.camilawaz.com/images/camila-waz-cv.pdf)
+[Download my Resume](https://colordrops.link/camila-waz-cv)
