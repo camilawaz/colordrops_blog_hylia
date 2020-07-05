@@ -9,7 +9,7 @@ tags:
   - Pure CSS
 projectYear: ""
 ---
-A series off pure CSS illustrations.
+A series of pure CSS illustrations.
 
 <p class="codepen" data-height="550" data-theme-id="light" data-default-tab="result" data-user="camila_waz" data-slug-hash="GdpNWd" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Lighthouse">
   <span>See the Pen <a href="https://codepen.io/camila_waz/pen/GdpNWd">
