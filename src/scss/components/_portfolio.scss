@@ -168,3 +168,11 @@
     display: none;
   }
 }
+
+.project {
+  figure:not(:first-of-type) {
+    img {
+      box-shadow: none;
+    }
+  }
+}
