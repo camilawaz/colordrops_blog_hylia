@@ -2,22 +2,16 @@
   "items": [
     {
       "text": "About",
-      "url": "../about-camila-waz/",
+      "url": "/about-camila-waz/",
       "external": false
     },
     {
       "text": "Speaking",
-      "url": "https://www.camilawaz.com/speaking/"
+      "url": "/speaking/"
     },
     {
-      "text": "Instagram",
-      "url": "https://www.instagram.com/colordrops_",
-      "external": true
-    },
-    {
-      "text": "CodePen",
-      "url": "https://codepen.io/camila_waz",
-      "external": true
+      "text": "Work",
+      "url": "/work/"
     }
   ]
 }
