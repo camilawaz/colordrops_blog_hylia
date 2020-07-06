@@ -14,10 +14,10 @@ It all started more than 10 years ago when my passion for creating content broug
 
 I graduated in Communication in Digital Media, back in Brazil, where I had the opportunity to develop myself as a multidisciplinary professional. I'm a NN/g certified UX professional ([Verify](https://www.nngroup.com/ux-certification/verify/) - Code: 1032376) and have also pursued other qualifications focused on User Experience as well as Adobe Creative Suite training.
 
-I'm currently working as UI/UX Web Developer at Net Affinity and co-organising DublinCSS - a community meetup that welcomes all developers and designers, regardless of experience level, to discuss and learn about the latest and standard CSS techniques.
+I'm currently working as UX Design Engineer at Net Affinity and co-organising DublinCSS - a community meetup that welcomes all developers and designers, regardless of experience level, to discuss and learn about the latest and standard CSS techniques.
 
 Last but not least, I am someone who loves to share what I know and learn more every day.
 
 If you’d like to hear more from me, find me on [Twitter](https://twitter.com/camila_waz).
 
-[Download my Resume](https://colordrops.link/camila-waz-cv)
+[Download my CV](https://colordrops.link/camila-waz-cv)
