@@ -13,3 +13,9 @@ studio: Dois Cafés
 myRole: UI Design, Web Development
 ---
 UI Design for Lagoa Shopping Website by Camila Waz
+
+
+
+![](/images/lagoa-shopping-details.png "Homepage details")
+
+![](/images/lagoa-shopping-home.png "Homepage and initial wireframes")
