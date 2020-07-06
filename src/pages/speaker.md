@@ -13,7 +13,7 @@ Due to the current circumstances around travel, I'd be happy to discuss any oppo
 
 ### 2020
 
-Playful CSS - [WordCamp  Málaga](https://2020.malaga.wordcamp.org/session/playful-css/) • [Slides](https://colordrops.link/WCMalaga-slides)
+Playful CSS - [WordCamp  Málaga](https://2020.malaga.wordcamp.org/session/playful-css/) • [Slides](https://colordrops.link/WCMalaga-slides) • [Video](https://colordrops.link/playful-css-video)
 
 ### 2019
 
